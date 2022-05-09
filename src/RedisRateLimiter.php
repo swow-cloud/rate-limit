@@ -1,7 +1,7 @@
 <?php
 /**
  * This file is part of SwowCloud
- * @license  https://github.com/swow-cloud/music-server/blob/main/LICENSE
+ * @license  https://github.com/swow-cloud/websocket-server/blob/main/LICENSE
  */
 
 declare(strict_types=1);
@@ -17,6 +17,7 @@ use function time;
 final class RedisRateLimiter extends ConfigurableRateLimiter implements RateLimiter, SilentRateLimiter
 {
     /**
+     * This is an instantiation object of Redis
      * @var \Redis
      */
     private mixed $redis;
